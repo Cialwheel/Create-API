@@ -1,0 +1,23 @@
+<table class="table">
+<tr>
+  <th>Block_id</th>
+  <th>Fullname</th>
+  <th>Slug</th>
+  <th>WebsiteUrl</th>
+  <th>Status</th>
+  <th>Volume</th>
+</tr>
+<% @cities.each do |city| %>
+  <tr>
+    <td><%= city.block_id %></td>
+    <td><%= city.fullname %></td>
+    <td><%= city.slug %></td>
+    <td><%= city.websiteUrl %></td>
+    <td><%= city.status %></td>
+    <td>
+      <%= city.volume %>
+      <%= link_to("update",update_volume_city_path(city), :method => :post) %>
+    </td>
+  </tr>
+<% end %>
+</table>

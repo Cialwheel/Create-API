@@ -1,0 +1,2 @@
+class Addvolume < ApplicationRecord
+end
