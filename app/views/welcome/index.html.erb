@@ -1,0 +1,6 @@
+<h2>订票系统</h2>
+<% if current_user %>
+  <p>已经登入你的API_key是<code><%= current_user.authentication_token %></code></p>
+<% else %>
+  <p>尚未登陆</p>
+<% end %>
